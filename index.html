@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ТехноМагазин - лучшие цены на электронику">
+    <meta http-equiv="Content-Encoding" content="gzip">
+    <meta http-equiv="Cache-Control" content="public, max-age=31536000">
+    
+
+    <link rel="stylesheet" href="css/min.css">
+
+    <link href="//fonts.googleapis.com/css?family=Roboto|Open+Sans:400,400i,600" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Хедер -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-large.png" alt="ТехноМагазин" width="200" height="80">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#products">Товары</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный баннер с большим изображением -->
+    <section class="hero-banner">
+        <div class="banner-container">
+            <!-- Очень большое неоптимизированное изображение -->
+            <img src="images/hero-banner-opt.jpg" alt="Новые поступления" class="hero-image">
+            <div class="hero-content">
+                <h1>Новые поступления техники!</h1>
+                <p>Скидки до 50% на все товары</p>
+                <button class="cta-button" onclick="scrollToProducts()">Смотреть товары</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Галерея товаров -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2>Популярные товары</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <!-- Большие неоптимизированные изображения товаров -->
+                    <img src="images/product1-opt.jpg" alt="Смартфон" class="product-image">
+                    <h3>Смартфон XTech Pro</h3>
+                    <p class="price">29 990 ₽</p>
+                    <button class="add-to-cart" onclick="addToCart(1)">Добавить в корзину</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/product2-opt.jpg" alt="Ноутбук" class="product-image">
+                    <h3>Ноутбук GameBook Ultra</h3>
+                    <p class="price">89 990 ₽</p>
+                    <button class="add-to-cart" onclick="addToCart(2)">Добавить в корзину</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/product3-opt.jpg" alt="Наушники" class="product-image">
+                    <h3>Наушники AudioMax</h3>
+                    <p class="price">12 990 ₽</p>
+                    <button class="add-to-cart" onclick="addToCart(3)">Добавить в корзину</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/product4-opt.jpg" alt="Планшет" class="product-image">
+                    <h3>Планшет TabPro</h3>
+                    <p class="price">45 990 ₽</p>
+                    <button class="add-to-cart" onclick="addToCart(4)">Добавить в корзину</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/product5-opt.jpg" alt="Часы" class="product-image">
+                    <h3>Умные часы WatchSmart</h3>
+                    <p class="price">19 990 ₽</p>
+                    <button class="add-to-cart" onclick="addToCart(5)">Добавить в корзину</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="images/product6-opt.jpg" alt="Камера" class="product-image">
+                    <h3>Экшн-камера ActionPro</h3>
+                    <p class="price">24 990 ₽</p>
+                    <button class="add-to-cart" onclick="addToCart(6)">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция с анимацией -->
+    <section class="animated-section">
+        <div class="container">
+            <h2>Почему выбирают нас?</h2>
+            <div class="features-list">
+                <div class="feature-item" data-animation="fadeIn">
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставляем по всей России за 1-3 дня</p>
+                </div>
+                <div class="feature-item" data-animation="slideUp">
+                    <h3>Гарантия качества</h3>
+                    <p>Официальная гарантия на все товары</p>
+                </div>
+                <div class="feature-item" data-animation="zoomIn">
+                    <h3>Низкие цены</h3>
+                    <p>Лучшие цены на рынке</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Телефон: +7 (999) 123-45-67</p>
+                    <p>Email: info@technostore.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <p>О компании</p>
+                    <p>Доставка и оплата</p>
+                    <p>Возврат товаров</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <p>ВКонтакте</p>
+                    <p>Instagram</p>
+                    <p>Telegram</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ТехноМагазин. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Скрипты в конце, но множественные файлы -->
+    <script src="js/scripts-optimized.js"></script>
+
+</html>
